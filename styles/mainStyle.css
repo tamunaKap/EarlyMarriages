@@ -1,0 +1,3 @@
+body{overflow-x:hidden}body>.row{background-position:center;background-repeat:no-repeat;background-size:cover;height:100vh}body>.row:first-child{background-image:url("../images/background.jpg")}body>.row:first-child>section{height:100%}body>.row:first-child article{color:#c0787b}.girls{position:absolute;width:100%;bottom:15px}.girls img{height:200px;float:left;cursor:pointer;position:relative}aside{position:fixed;top:50px;right:10px}aside li{display:block !important;cursor:pointer}
+
+/*# sourceMappingURL=mainStyle.css.map */
