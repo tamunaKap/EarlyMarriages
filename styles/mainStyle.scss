@@ -1,0 +1,85 @@
+﻿$textColor: #c0787b;
+
+@mixin background() {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+@mixin background-image($url) {
+background-image: url("../images/background.jpg");
+}
+
+@mixin centerBlock($width, $height) {
+position: absolute;
+width: $width;
+height: $height;
+top: 50%;
+left: 50%;
+margin-top: -$height/2;
+margin-left: -$width/2;
+}
+
+body {
+overflow-x: hidden;
+
+> .row {
+height: 100vh;
+@include background();
+}
+
+> .row:first-child {
+@include background-image("../images/background.jpg");
+
+> section {
+height: 100%;
+}
+
+article {
+color: $textColor;
+}
+}
+}
+
+.girls {
+position: absolute;
+width: 100%;
+bottom: 15px;
+
+img {
+height: 200px;
+float: left;
+cursor: pointer;
+position: relative;
+}
+}
+
+aside {
+position: fixed;
+top: 50px;
+right: 10px;
+
+li {
+display: block !important;
+cursor: pointer;
+}
+}
+
+.centerBlock {
+@include centerBlock(600px, 450px);
+background-color: rgba(140,72,70,1);
+
+.glyphicon-remove {
+cursor: pointer;
+float: right;
+color: red;
+font-size: 20px;
+padding: 10px 10px 0 0;
+}
+
+iframe {
+width: 100%;
+height: 410px;
+padding: 10px 10px;
+}
+}
