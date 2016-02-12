@@ -11,7 +11,7 @@ $(function () {
         $(".centerBlock").fadeOut();
         $(".centerBlock iframe").attr("src", "");
     });
-
+    $('[data-toggle="tooltip"]').tooltip();
     //var controller = new ScrollMagic.Controller();
     //var tween = TweenMax.from("#article", 1, { css: { scaleX: 0.5, scaleY: 0.5 }, ease: Linear.easeNone });
 
@@ -26,8 +26,7 @@ $(function () {
             curviness: 1.25,
             autoRotate: true,
             values: [
-                    { x: 100, y: -20 },
-                    { x: 300, y: 10 }
+                    { x: 10, y: 10 } 
             ]
         },
         looping: {
@@ -40,7 +39,7 @@ $(function () {
                     { x: 80, y: 20 },
                     { x: 100, y: 160 },
                     { x: 200, y: 120 },
-                    { x: 620, y: 150 }
+                    { x: 620, y: 550 }
             ]
         },
         leave: {
@@ -63,8 +62,7 @@ $(function () {
         .add(TweenMax.to($("#plane"), 1, { css: { bezier: flightpath.leave }, ease: Power1.easeInOut }));
 
     // build scene
-    var scene = new ScrollMagic.Scene({ triggerElement: "#trigger", duration: 500, offset: 100 })
-                    .setPin("#target")
+    var scene = new ScrollMagic.Scene({ triggerElement: "#target", duration: 500, offset: 0 }) 
                     .setTween(tween)
                     .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
