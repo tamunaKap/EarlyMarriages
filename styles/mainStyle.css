@@ -11,6 +11,10 @@
       height: 100%; }
     body > .row:first-child article {
       color: #c0787b; }
+  body > .row:nth-child(2) {
+    background-image: url("../images/secondBackground.jpg"); }
+    body > .row:nth-child(2) > section {
+      height: 100%; }
 
 .girls {
   position: absolute;
@@ -59,3 +63,54 @@ aside {
 
 .tooltip.top .tooltip-arrow {
   border-top-color: #8C4846; }
+
+.feast {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -350px; }
+  .feast img {
+    position: absolute;
+    float: left;
+    cursor: pointer; }
+  .feast .tamada img:first-child {
+    top: -45px;
+    left: -50px; }
+  .feast .tamada img:last-child {
+    top: 0px;
+    left: 20px; }
+  .feast .lawyer img:first-child {
+    top: -45px;
+    left: 88px; }
+  .feast .lawyer img:last-child {
+    top: 45px;
+    left: 138px; }
+  .feast .policeman img:first-child {
+    top: -70px;
+    left: 207px; }
+  .feast .policeman img:last-child {
+    top: 5px;
+    left: 257px; }
+  .feast .doctor img:first-child {
+    top: -50px;
+    left: 320px; }
+  .feast .doctor img:last-child {
+    top: 33px;
+    left: 320px; }
+  .feast .psychologist img:first-child {
+    top: -50px;
+    left: 430px; }
+  .feast .psychologist img:last-child {
+    top: 20px;
+    left: 480px; }
+  .feast .teacher img:first-child {
+    top: -50px;
+    left: 570px; }
+  .feast .teacher img:last-child {
+    top: 60px;
+    left: 590px; }
+  .feast .table img {
+    bottom: 0px; }

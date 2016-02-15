@@ -31,12 +31,21 @@ height: 100vh;
 > .row:first-child {
 @include background-image("../images/background.jpg");
 
+
 > section {
 height: 100%;
 }
 
 article {
 color: $textColor;
+}
+}
+
+> .row:nth-child(2) {
+background-image: url('../images/secondBackground.jpg');
+
+> section {
+height: 100%;
 }
 }
 }
@@ -93,5 +102,92 @@ padding: 5px;
 }
 
 .tooltip.top .tooltip-arrow {
-    border-top-color: #8C4846;
+border-top-color: #8C4846;
+}
+
+.feast {
+@include centerBlock(700px, 500px);
+
+img {
+position: absolute;
+float: left;
+cursor: pointer;
+}
+
+.tamada {
+img:first-child {
+top: -45px;
+left: -50px;
+}
+
+img:last-child {
+top: 0px;
+left: 20px;
+}
+}
+
+.lawyer {
+img:first-child {
+top: -45px;
+left: 88px;
+}
+
+img:last-child {
+top: 45px;
+left: 138px;
+}
+}
+
+.policeman {
+
+img:first-child {
+top: -70px;
+left: 207px;
+}
+
+img:last-child {
+top: 5px;
+left: 257px;
+}
+}
+
+.doctor {
+img:first-child {
+top: -50px;
+left: 320px;
+}
+
+img:last-child {
+top: 33px;
+left: 320px;
+}
+}
+
+.psychologist {
+img:first-child {
+top: -50px;
+left: 430px;
+}
+
+img:last-child {
+top: 20px;
+left: 480px;
+}
+}
+
+.teacher {
+img:first-child {
+top: -50px;
+left: 570px;
+}
+
+img:last-child {
+top: 60px;
+left: 590px;
+}
+}
+
+.table img {
+bottom: 0px;
+}
 }
