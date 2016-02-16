@@ -35,7 +35,7 @@ $(function () {
         navigationPosition: 'right',
         navigationTooltips: ['home', 'feast'],
         showActiveTooltip: false,
-        slidesNavigation: true,
+        slidesNavigation: true, //false
         slidesNavPosition: 'bottom',
 
         //Scrolling
@@ -62,7 +62,7 @@ $(function () {
         recordHistory: true,
 
         //Design
-        controlArrows: true,
+        controlArrows: false,
         verticalCentered: true,
         resize: false,
         sectionsColor: ['#ccc', '#fff'],
