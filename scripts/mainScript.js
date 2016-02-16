@@ -1,4 +1,4 @@
-$(function () {
+$(function () { 
     $(".centerBlock").hide();
     $(".girls figure").click(function () {
         var youtubeUrl = $(this).data("youtube");
@@ -6,26 +6,84 @@ $(function () {
         $(".centerBlock").fadeIn();
     });
 
-
     $(".centerBlock .glyphicon-remove").click(function () {
         $(".centerBlock").fadeOut();
         $(".centerBlock iframe").attr("src", "");
     });
     $('[data-toggle="tooltip"]').tooltip();
 
-    //$('.feast img').mouseenter(function () {
-    //    var src = this.src;
-    //    if (src.indexOf("supra") == -1) {
-    //        $(this).attr("src", src.replace(".png", "bubble.png"));
-    //    }
-    //}).mouseleave(function () {
-    //    var src = this.src;
-    //    if (src.indexOf("supra") == -1) {
-    //        $(this).attr("src", src.replace("bubble.png", ".png"));
-    //    }
-    //});
+    $('.feast img:last-child').mouseenter(function () {
+        var src = this.src;
+        if (src.indexOf("supra") == -1) {
+            $(this).siblings("img").show();
+        }
+    }).mouseleave(function () {
+        var src = this.src;
+        if (src.indexOf("supra") == -1) {
+            $(this).siblings("img").hide();
+        }
+    }).click(function () {
 
+    });
 
+    $('#fullpage').fullpage({
+        //Navigation
+        menu: '#menu',
+        lockAnchors: false,
+        anchors: ['home', 'feast'],
+        navigation: false,
+        navigationPosition: 'right',
+        navigationTooltips: ['home', 'feast'],
+        showActiveTooltip: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5,
+
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+
+        //Design
+        controlArrows: true,
+        verticalCentered: true,
+        resize: false,
+        sectionsColor: ['#ccc', '#fff'],
+        paddingTop: '3em',
+        paddingBottom: '10px',
+        fixedElements: '#header, .footer',
+        responsiveWidth: 0,
+        responsiveHeight: 0,
+
+        //Custom selectors
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+
+        //events
+        onLeave: function (index, nextIndex, direction) { },
+        afterLoad: function (anchorLink, index) { },
+        afterRender: function () { },
+        afterResize: function () { },
+        afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) { },
+        onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) { }
+    });
     //var controller = new ScrollMagic.Controller();
     //var tween = TweenMax.from("#article", 1, { css: { scaleX: 0.5, scaleY: 0.5 }, ease: Linear.easeNone });
 

@@ -19,16 +19,17 @@ left: 50%;
 margin-top: -$height/2;
 margin-left: -$width/2;
 }
-
+ 
 body {
 overflow-x: hidden;
 
-> .row {
+.row {
+margin:0px;
 height: 100vh;
 @include background();
 }
 
-> .row:first-child {
+.row:first-child {
 @include background-image("../images/background.jpg");
 
 
@@ -41,7 +42,7 @@ color: $textColor;
 }
 }
 
-> .row:nth-child(2) {
+.row:nth-child(2) {
 background-image: url('../images/secondBackground.jpg');
 
 > section {

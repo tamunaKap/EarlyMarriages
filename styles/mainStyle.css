@@ -1,19 +1,20 @@
 ﻿body {
   overflow-x: hidden; }
-  body > .row {
+  body .row {
+    margin: 0px;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
-  body > .row:first-child {
+  body .row:first-child {
     background-image: url("../images/background.jpg"); }
-    body > .row:first-child > section {
+    body .row:first-child > section {
       height: 100%; }
-    body > .row:first-child article {
+    body .row:first-child article {
       color: #c0787b; }
-  body > .row:nth-child(2) {
+  body .row:nth-child(2) {
     background-image: url("../images/secondBackground.jpg"); }
-    body > .row:nth-child(2) > section {
+    body .row:nth-child(2) > section {
       height: 100%; }
 
 .girls {
