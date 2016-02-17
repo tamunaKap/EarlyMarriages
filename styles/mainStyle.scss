@@ -1,4 +1,5 @@
 ﻿$textColor: #c0787b;
+$freeSpace: calc(100% - 700px);
 
 @mixin background() {
 background-position: center;
@@ -19,12 +20,20 @@ left: 50%;
 margin-top: -$height/2;
 margin-left: -$width/2;
 }
- 
+
+@mixin closingButton() {
+cursor: pointer;
+float: right;
+color: red;
+font-size: 20px;
+padding: 10px 10px 0 0;
+}
+
 body {
 overflow-x: hidden;
 
 .row {
-margin:0px;
+margin: 0px;
 height: 100vh;
 @include background();
 }
@@ -82,11 +91,7 @@ cursor: pointer;
 background-color: rgba(140,72,70,1);
 
 .glyphicon-remove {
-cursor: pointer;
-float: right;
-color: red;
-font-size: 20px;
-padding: 10px 10px 0 0;
+@include closingButton();
 }
 
 iframe {
@@ -190,5 +195,18 @@ left: 590px;
 
 .table img {
 bottom: 0px;
+}
+}
+
+.featsContent {
+width: $freeSpace;
+position: absolute;
+right: -100%;
+height: 100vh;
+top: 0px;
+background-color: rgba(255,255,255, 0.5);
+
+.glyphicon-remove {
+@include closingButton();
 }
 }
