@@ -7,7 +7,7 @@ $(function () {
         $(".centerBlock").fadeIn();
     });
 
-    $(".centerBlock .glyphicon-remove").click(function () {
+    $(".centerBlock .fa-close").click(function () {
         $(".centerBlock").fadeOut();
         $(".centerBlock iframe").attr("src", "");
     });
@@ -27,8 +27,8 @@ $(function () {
         var src = this.src;
         if (src.indexOf("Supra") == -1) {
             var targetId = $(this).data("target");
-            $(".featsContent section>div").fadeOut();
-            $("#" + targetId).fadeIn();
+            $(".featsContent section>div").hide();
+            $("#" + targetId).fadeIn(500);
             $(".feast").animate({
                 "left": "350px"
             }, 1000);
