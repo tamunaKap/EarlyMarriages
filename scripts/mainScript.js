@@ -60,4 +60,19 @@ $(function () {
         slidesNavigation: true, //false
         slidesNavPosition: 'bottom',
     });
+
+    $(" #aboutUs .glyphicon-remove").click(function () {
+        $(" #aboutUs ").hide();
+    });
+    $(" #gallery .glyphicon-remove").click(function () {
+        $(" #gallery ").hide();
+    });
+
+    $("aside li").click(function() {
+        var id = $(this).data("target");
+        $("#" + id).show();
+    });
+    //$("#srollDown").click(function () {
+    //    $("html, body").animate({ scrollTop: $('#feastC').offset().top }, 1000);
+    //});
 })

@@ -85,13 +85,15 @@ aside {
     }
 
 .tooltip .tooltip-inner {
-    background-color: #8C4846;
+    background-color: transparent;
+    color: #8C4846;
     font-size: 16px;
+    font-weight: 600;
     padding: 5px;
 }
 
 .tooltip.top .tooltip-arrow {
-    border-top-color: #8C4846;
+    border-top-color: transparent;
 }
 
 .feast {
@@ -230,3 +232,51 @@ h3 {
 .featsContent article iframe {
     margin-left: calc(50% - 280px);
 }
+
+
+#aboutUs {
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -180px;
+    background-color:  #8C4846;
+    color: white;
+}
+
+    #aboutUs article {
+        padding: 50px 20px;
+    }
+
+    #aboutUs .glyphicon-remove, #gallery .glyphicon-remove{
+        cursor: pointer;
+        color: white;
+        padding: 10px;
+        float: right;
+        font-size: 20px;
+    }
+
+    #gallery {
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 0px;
+        height: 100vh;
+        background-color: #8C4846;
+        overflow-y: scroll;
+    }
+        #gallery  img {
+            height: 200px;
+            margin-top: 15px;
+        }
+        /*#srollDown {
+            cursor: pointer;
+            color: #8C4846;
+            float: right;
+            position: absolute;
+            bottom: 70px;
+            right: 30px;
+            font-size: 28px;
+        }*/
