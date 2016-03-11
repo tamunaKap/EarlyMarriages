@@ -24,6 +24,7 @@ $(function () {
             $(this).siblings("img").hide();
         }
     }).click(function () {
+        $("#secondPageDescription").hide();
         var src = this.src;
         if (src.indexOf("Supra") == -1) {
             var targetId = $(this).data("target");
@@ -47,6 +48,7 @@ $(function () {
         }, 1000, function () {
             $(".featsContent section>div").hide();
         });
+        $("#secondPageDescription").show();
     });
 
     $('#fullpage').fullpage({
@@ -71,8 +73,5 @@ $(function () {
     $("aside li").click(function() {
         var id = $(this).data("target");
         $("#" + id).show();
-    });
-    //$("#srollDown").click(function () {
-    //    $("html, body").animate({ scrollTop: $('#feastC').offset().top }, 1000);
-    //});
+    }); 
 })

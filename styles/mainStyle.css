@@ -106,75 +106,81 @@ aside {
     margin-left: -350px;
 }
 
-    .feast img {
-        position: absolute;
-        float: left;
-        cursor: pointer;
-    }
+#secondPageDescription {
+    width: 300px; 
+    padding-top: 20px;
+    padding-left: 15px;
+}
 
-    .feast .tamada img:first-child {
-        top: -55px;
-        left: 60px;
-    }
+.feast img {
+    position: absolute;
+    float: left;
+    cursor: pointer;
+}
 
-    .feast .tamada img:last-child {
-        top: 0;
-        left: 20px;
-    }
+.feast .tamada img:first-child {
+    top: -55px;
+    left: 60px;
+}
 
-    .feast .lawyer img:first-child {
-        top: -35px;
-        left: 150px;
-    }
+.feast .tamada img:last-child {
+    top: 0;
+    left: 20px;
+}
 
-    .feast .lawyer img:last-child {
-        top: 45px;
-        left: 138px;
-    }
+.feast .lawyer img:first-child {
+    top: -35px;
+    left: 150px;
+}
 
-    .feast .policeman img:first-child {
-        top: -70px;
-        left: 207px;
-    }
+.feast .lawyer img:last-child {
+    top: 45px;
+    left: 138px;
+}
 
-    .feast .policeman img:last-child {
-        top: 5px;
-        left: 257px;
-    }
+.feast .policeman img:first-child {
+    top: -70px;
+    left: 207px;
+}
 
-    .feast .doctor img:first-child {
-        top: -40px;
-        left: 330px;
-    }
+.feast .policeman img:last-child {
+    top: 5px;
+    left: 257px;
+}
 
-    .feast .doctor img:last-child {
-        top: 33px;
-        left: 320px;
-    }
+.feast .doctor img:first-child {
+    top: -40px;
+    left: 330px;
+}
 
-    .feast .psychologist img:first-child {
-        top: -50px;
-        left: 430px;
-    }
+.feast .doctor img:last-child {
+    top: 33px;
+    left: 320px;
+}
 
-    .feast .psychologist img:last-child {
-        top: 20px;
-        left: 480px;
-    }
+.feast .psychologist img:first-child {
+    top: -50px;
+    left: 430px;
+}
 
-    .feast .teacher img:first-child {
-        top: -50px;
-        left: 570px;
-    }
+.feast .psychologist img:last-child {
+    top: 20px;
+    left: 480px;
+}
 
-    .feast .teacher img:last-child {
-        top: 60px;
-        left: 590px;
-    }
+.feast .teacher img:first-child {
+    top: -50px;
+    left: 570px;
+}
 
-    .feast .table img {
-        bottom: 0px;
-    }
+.feast .teacher img:last-child {
+    top: 60px;
+    left: 590px;
+}
+
+.feast .table img {
+    bottom: 0px;
+}
 
 .featsContent {
     width: calc(100% - 700px);
@@ -237,12 +243,12 @@ h3 {
 #aboutUs {
     width: 600px;
     height: 350px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     margin-left: -300px;
     margin-top: -180px;
-    background-color:  #8C4846;
+    background-color: #8C4846;
     color: white;
 }
 
@@ -250,7 +256,7 @@ h3 {
         padding: 50px 20px;
     }
 
-    #aboutUs .glyphicon-remove, #gallery .glyphicon-remove{
+    #aboutUs .glyphicon-remove, #gallery .glyphicon-remove {
         cursor: pointer;
         color: white;
         padding: 10px;
@@ -258,25 +264,17 @@ h3 {
         font-size: 20px;
     }
 
-    #gallery {
-        width: 90%;
-        position: absolute;
-        left: 5%;
-        top: 0px;
-        height: 100vh;
-        background-color: #8C4846;
-        overflow-y: scroll;
+#gallery {
+    width: 90%;
+    position: fixed;
+    left: 5%;
+    top: 0px;
+    height: 100vh;
+    background-color: #8C4846;
+    overflow-y: scroll;
+}
+
+    #gallery img {
+        height: 200px;
+        margin-top: 15px;
     }
-        #gallery  img {
-            height: 200px;
-            margin-top: 15px;
-        }
-        /*#srollDown {
-            cursor: pointer;
-            color: #8C4846;
-            float: right;
-            position: absolute;
-            bottom: 70px;
-            right: 30px;
-            font-size: 28px;
-        }*/
